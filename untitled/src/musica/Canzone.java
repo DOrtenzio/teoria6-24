@@ -5,6 +5,7 @@ public class Canzone {
     private String nomeArtista;
     private int tempo;
 
+    //SET E GET
     public String getNomeCanzone() { return nomeCanzone; }
     public int getTempo() { return tempo; }
     public String getNomeArtista() { return nomeArtista; }
@@ -18,6 +19,7 @@ public class Canzone {
             this.tempo = tempo;
     }
 
+    //COSTRUTTORI
     public Canzone(String nomeCanzone,String nomeArtista,int tempo){
         this.nomeCanzone=nomeCanzone;
         this.nomeArtista=nomeArtista;
@@ -27,6 +29,7 @@ public class Canzone {
         this("sconosciuto","sconosciuto",0);
     }
 
+    //STAMPA
     public String toString(){
         return "Nome canzone:"+this.nomeCanzone+" Nome artista:"+this.nomeArtista+" durata: "+this.tempo;
     }
