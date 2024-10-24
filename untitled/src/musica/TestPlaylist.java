@@ -18,11 +18,13 @@ public class TestPlaylist {
         else
             System.out.println("X");
         System.out.println("Num canzoni: "+miaPlaylist.getNumeroCanzoniInserite());
-        System.out.println(miaPlaylist.toString());
+        System.out.println("CANCELLO FABRI FIBRA:"+miaPlaylist.cancellaCanzone(c1));
+        System.out.println("\nCANZONI DELLA TUA PLAYLIST\n"+miaPlaylist.toString());
+        System.out.println("\nCanzoni di Tony Effe");
         Canzone [] c= miaPlaylist.ricercaCanzoni("Tony Effe");
         for (int i=0;i<c.length;i++){
             System.out.println(c[i].toString());
         }
-        System.out.println("Ricerca catante di Icon: "+miaPlaylist.ricercaCantante("Icon"));
+        System.out.println("\nRicerca catante di Icon: "+miaPlaylist.ricercaCantante("Icon"));
     }
 }
